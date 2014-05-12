@@ -6,20 +6,15 @@ public class ejercicio2 {
 		System.out.println("Ingrese un numero");
 		int num1 = s.nextInt();
 		System.out.println("Ingrese una cadena de texto");
-		String t;
-		t = s.next();
-		while (t)
+		String texto = s.next();
+		int t = 0;
+		
+		while (t < num1)
+			{
 			System.out.println(t + num1);
-			
-			
-		
-			
-			
-		
-		
-					
-	
-		
+			t++;
+			}
+
 	}
 
 }
