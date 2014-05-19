@@ -45,7 +45,7 @@ public class ejercicio2 {
 			else
 				System.out.println("Incorrecto");
 		}
-		System.out.println("el porcentaje de respuesta correctas es:");
+		System.out.println("el porcentaje de respuesta correctas es:");//Calculando el porcentaje de las respuestas
 		{
 			if (x1 == 5)
 				x1 = 20;
@@ -67,7 +67,7 @@ public class ejercicio2 {
 				x5 = 20;
 			else x5= 0;
 		}
-		System.out.println(x1+x2+x3+x4+x5 + "%");
+		System.out.println(x1+x2+x3+x4+x5 + "%");//Aqui se muestra el porcentaje ya calculado
 		if ((x1+x2+x3+x4+x5) >= 60)
 			System.out.println("Ganaste");
 		else 
