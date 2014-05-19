@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Foro3 {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner (System.in);
+		System.out.println("Ingrese nombre jugador 1");
+		String nom1 = s.next();
+		System.out.println("Ingrese puntaje del jugador 1 ");
+		double pun1 = s.nextDouble();
+		System.out.println("Ingrese nombre jugador 2");
+		String nom2 = s.next();
+		System.out.println("Ingrese puntaje jugador 2");
+		double pun2 = s.nextDouble();
+		System.out.println("Ingrese nombre jugador 3");
+		String nom3 = s.next();
+		System.out.println("Ingrese puntaje jugador 3");
+		double pun3 = s.nextDouble();
+		
+		if ((pun1 > pun2) && (pun1 > pun3))
+			System.out.println("Mejor puntaje: " + nom1 + " con " + pun1 + " puntos");
+		else if ((pun2 > pun3) && (pun2 > pun1))
+			System.out.println("Mejor puntaje: " + nom2 + " con " + pun2 + " puntos");
+		else if ((pun3 > pun1) && (pun3 > pun2))
+			System.out.println("Mejor puntaje: " + nom3 + " con " + pun3 + " puntos");
+		
+			
+		if ((pun1 < pun2) && (pun1 < pun3))
+			System.out.println("Peor puntaje: " + nom1 + " con " + pun1 + " puntos");
+		else if ((pun2 < pun3) && (pun2 < pun1))
+			System.out.println("Peor puntaje: " + nom2 + " con " + pun2 + " puntos");
+		else if ((pun3 < pun1) && (pun3 < pun2))
+			System.out.println("Peor puntaje: " + nom3 + " con " + pun3 + " puntos");
+		
+		double promedio = ((pun1+pun2+pun3)/3);
+		System.out.println("Promedio de puntaje: " + promedio);
+	}
+
+}
