@@ -1,0 +1,77 @@
+import java.util.Scanner;
+public class ejercicio2 {
+	
+	public static void main(String[] args) {
+		Scanner s = new Scanner (System.in);//Agregamos un scanner para el programa 
+		System.out.println("Juego de Preguntas");//Presentacion del programa
+		
+		System.out.println("Cuantos oceanos hay en la Tierra?");//Primera pregunta del programa
+		int x1 = s.nextInt();
+		{
+			if (x1 == 5)//Evaluacion de respuesta correcta o incorrecta pregunta 1
+				System.out.println("Correcto");
+			else
+				System.out.println("Incorrecto");
+		}
+		System.out.println("Cuantos satelites naturales tiene el planeta Tierra?");//Segunda pregunta del programa
+		int x2 = s.nextInt();
+		{
+			if (x2 == 1)//Evaluacion de respuesta correcto o incorrecta pregunta 2
+				System.out.println("Correcto");
+			else
+				System.out.println("Incorrecto");
+		}
+		System.out.println("Año en que Honduras se independizo de la conquista?");//Tercera pregunta del programa
+		int x3 = s.nextInt();
+		{
+			if (x3 == 1821)//Evaluacion de respuesta correcta o incorrecta pregunta 3
+				System.out.println("Correcto");
+			else
+				System.out.println("Incorrecto");
+		}
+		System.out.println("Cuantos polos magneticos tiene la Tierra?");//Cuarta pregunta del programa
+		int x4 = s.nextInt();
+		{
+			if (x4 == 2)//Evaluacion de respuesta correcta o incorrecta pregunta 4
+				System.out.println("Correcto");
+			else
+				System.out.println("Incorrecto");
+		}
+		System.out.println("Cuantos continentes existen en el mundo?");//Quinta pregunta del programa
+		int x5 = s.nextInt();
+		{
+			if (x5 == 5)//Evaluacion de la respuesta correcta o incorrecta pregunta 5
+				System.out.println("Correcto");
+			else
+				System.out.println("Incorrecto");
+		}
+		System.out.println("el porcentaje de respuesta correctas es:");
+		{
+			if (x1 == 5)
+				x1 = 20;
+			else x1 = 0;
+		
+			if (x2 == 1)
+				x2 = 20;
+			else x2 = 0;
+		
+			if (x3 == 1821)
+				x3 = 20;
+			else x3 = 0;
+		
+			if (x4 == 2)
+				x4 = 20;
+			else x4 = 0;
+		
+			if (x5 == 5)
+				x5 = 20;
+			else x5= 0;
+		}
+		System.out.println(x1+x2+x3+x4+x5 + "%");
+		if ((x1+x2+x3+x4+x5) >= 60)
+			System.out.println("Ganaste");
+		else 
+			System.out.println("Perdiste");
+	}
+
+}
